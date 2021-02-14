@@ -1,5 +1,5 @@
 /* PROJETO CALCULADORA
-  @author Matheus Dalvino */
+  @author Matheus Dalvino*/
 package evoluçao;
 
 import java.awt.BorderLayout;
@@ -19,10 +19,14 @@ public class Calculadora extends JFrame {
 		Container c2 = new JPanel();
 		
 		c1.setLayout(new BorderLayout());
-		c2.setLayout(new GridLayout(4,4));//4 LINHAS E 4 COLUNAS 
+		c2.setLayout(new GridLayout(5,4));//4 LINHAS E 4 COLUNAS 
         
 		c1.add(BorderLayout.SOUTH, c2);
 		
+		c2.add(new JButton("C"));
+		c2.add(new JButton("( )"));
+		c2.add(new JButton("%"));
+		c2.add(new JButton("<<"));
 		c2.add(new JButton("7"));
 		c2.add(new JButton("8"));
 		c2.add(new JButton("9"));
